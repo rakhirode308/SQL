@@ -5,7 +5,7 @@ SELECT * FROM employees;
 /*------------------------------------- SUB QUERIES ----------------------------------*/
 
 /*-------------------SELECT QUERY---------------------*/
-set SQL_SAFE_UPDATES = 0;
+set SQL_SAFE_UPDATES = 0
 
 SELECT name,age,city,salary from employees
 WHERE salary > (SELECT AVG(salary) FROM employees);
